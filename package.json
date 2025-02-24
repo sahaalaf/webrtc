@@ -1,0 +1,10 @@
+{
+    "name": "webrtc-project",
+    "private": true,
+    "workspaces": ["backend", "frontend"],
+    "scripts": {
+      "build": "cd frontend && npm install && npm run build",
+      "start": "node backend/server.js"
+    }
+  }
+  
