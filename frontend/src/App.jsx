@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import "./App.css";
 
-const socket = io("http://localhost:3000");
+// Change the backend URL to the deployed version on Vercel
+const socket = io("https://webrtcbackend-prmu7uxth-sahal-sajeeds-projects.vercel.app");
 
 function App() {
   const localVideoRef = useRef(null);
